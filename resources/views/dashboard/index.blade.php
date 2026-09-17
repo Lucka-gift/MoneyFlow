@@ -1,13 +1,11 @@
-<div class="erreur">
-    <style>
-        .erreur {
-            text-align: center;
-            padding: 20px;
-        }
-        .erreur h1 {
-            color: #ff0000;
-        }
-    </style>
-    <h1>Erreur 404</h1>
-    <p>Vous avez accédé à une page qui n'existe pas.</p>
+@extends("auth.auth")
+<div class=" text-white flex ">
+    <div class=" bg-indigo-950 w-[20%] py-8">
+        <x-sidebar  />
+    </div>
+    <div class="side  text-primary w-[80%] relative bg-gray-200">
+        <x-header />
+    @yield("dashboard")
+    </div>
 </div>
+
